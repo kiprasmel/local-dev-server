@@ -1,0 +1,12 @@
+{
+	"name": "local-dev-server",
+	"version": "0.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": "git@github.com:kiprasmel/local-dev-server.git",
+	"author": "Kipras Melnikovas <kipras@kipras.org> (http://kipras.org/)",
+	"license": "UNLICENSED",
+	"scripts": {
+		"dev": "yarn --cwd browser-ext dev"
+	}
+}
