@@ -1,11 +1,11 @@
 {
-  "extends": "plasmo/templates/tsconfig.base",
-  "exclude": ["node_modules"],
-  "include": [".plasmo/**/*", "./**/*.ts", "./**/*.tsx"],
-  "compilerOptions": {
-    "paths": {
-      "~*": ["./*"]
-    },
-    "baseUrl": "."
-  }
+	"extends": "plasmo/templates/tsconfig.base",
+	"exclude": ["node_modules"],
+	"include": [".plasmo/**/*", "./**/*.ts", "./**/*.tsx", "../local-server/server.ts"],
+	"compilerOptions": {
+		"paths": {
+			"~*": ["./*"]
+		},
+		"baseUrl": "."
+	}
 }
