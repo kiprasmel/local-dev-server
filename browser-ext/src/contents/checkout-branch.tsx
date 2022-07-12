@@ -4,7 +4,8 @@ import { GithubBtn } from "../checkout-pr/GithubBtn";
 import { waitForEl } from "../util/waitForEl";
 
 export const config: PlasmoContentScript = {
-	matches: ["https://github.com/*/*/pull/*"],
+	// matches: ["https://github.com/*/*/pull/*"],
+	matches: ["https://github.com/*"],
 };
 
 export const getRootContainer = async (): Promise<Element> => {
