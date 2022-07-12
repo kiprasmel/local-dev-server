@@ -6,11 +6,11 @@
 	"author": "Kipras Melnikovas (http://kipras.org) <kipras@kipras.org>",
 	"packageManager": "yarn@1.22.11",
 	"scripts": {
-		"dev": "plasmo dev",
-		"build": "plasmo build"
+		"dev": "yarn plasmo dev",
+		"build": "yarn plasmo build && yarn plasmo build --target=firefox-mv2"
 	},
 	"dependencies": {
-		"plasmo": "0.43.8-alpha.6",
+		"plasmo": "0.47.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0"
 	},
@@ -26,6 +26,7 @@
 	"manifest": {
 		"host_permissions": [
 			"https://*/*"
-		]
+		],
+		"permissions": []
 	}
 }
