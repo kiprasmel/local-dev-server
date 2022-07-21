@@ -5,5 +5,5 @@ export type LDSConfig = {
 
 export const getDefaultLDSConfig = (): LDSConfig => ({
 	hostname: "localhost", //
-	port: 23457,
+	port: 14480,
 });

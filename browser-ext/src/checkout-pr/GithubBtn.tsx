@@ -27,7 +27,9 @@ export const GithubBtn: FC = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	const handleClick = async () => {
+	const handleClick = async (e: any) => {
+		e.preventDefault();
+
 		setStatus("unknown");
 
 		// ?project=local-dev-server&branch=feature-a
