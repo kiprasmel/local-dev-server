@@ -1,7 +1,7 @@
 /**
  * https://stackoverflow.com/a/61511955/9285308
  */
-export function waitForEl(selector: string, timeoutMs?: number): Promise<Element> {
+export function waitForEl(selector: string, timeoutMs?: number, maybe: boolean = false): Promise<Element> {
 	return new Promise((_resolve, reject) => {
 		let done = false;
 		const resolve = (x?: any) => {
