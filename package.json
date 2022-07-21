@@ -7,6 +7,11 @@
 	"author": "Kipras Melnikovas <kipras@kipras.org> (http://kipras.org/)",
 	"license": "UNLICENSED",
 	"scripts": {
-		"dev": "yarn --cwd browser-ext dev"
+		"dev": "yarn concurrently --names 'server,ext' 'yarn dev:server' 'yarn dev:ext'",
+		"dev:server": "yarn --cwd local-server dev",
+		"dev:ext": "yarn --cwd browser-ext dev"
+	},
+	"devDependencies": {
+		"concurrently": "7.3.0"
 	}
 }
