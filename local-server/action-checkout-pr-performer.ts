@@ -18,6 +18,7 @@ export const actionCheckoutPR: Action = {
 
 export function handleCheckoutPR(req: any, res: any): void {
 	console.count("\nnew req");
+	res.set("Content-Security-Policy", "default-src 'self'");
 
 	const {
 		project,

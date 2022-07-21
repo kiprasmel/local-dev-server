@@ -1,7 +1,6 @@
-import type { PlasmoContentScript } from "plasmo";
-
 import { GithubBtn } from "../checkout-pr/GithubBtn";
 import { waitForEl } from "../util/waitForEl";
+import type { PlasmoContentScript } from "plasmo";
 
 export const config: PlasmoContentScript = {
 	// matches: ["https://github.com/*/*/pull/*"],

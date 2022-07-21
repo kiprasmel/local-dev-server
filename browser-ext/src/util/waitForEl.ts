@@ -19,7 +19,9 @@ export function waitForEl(selector: string, timeoutMs?: number, maybe: boolean =
 			setTimeout(() => {
 				if (done) return;
 
-				console.error(`timeout waiting for element "${selector}".`);
+				if (!maybe) {
+					console.warn(`timeout waiting for element "${selector}".`);
+				}
 				observer.disconnect();
 				return reject();
 			}, timeoutMs);
