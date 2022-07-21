@@ -13,7 +13,7 @@ export const getRootContainer = async (): Promise<Element> => {
 
 	const id = "lds--checkout-pr";
 
-	const existing = await waitForEl("#" + id, 100).catch(() => null);
+	const existing = await waitForEl("#" + id, 100, true).catch(() => null);
 	if (existing) {
 		return existing;
 	}
